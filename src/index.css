@@ -8,7 +8,7 @@ body {
   /* //////////////////// */
   background: url(images/background_blur89.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 code {

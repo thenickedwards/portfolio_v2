@@ -1,17 +1,23 @@
 import * as React from "react";
-import Sample from "./Sample";
-import Card from "react-bootstrap/Card";
+import { Card, CardGroup, Row, Col } from "react-bootstrap/";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
-import picHolidaze from '../images/app-holidaze-plac.jpeg'
+// Sample app images
+import picHolidaze from "../images/app-holidaze-plac.jpeg";
+import picGameNotes from "../images/app-gamenotes.jpg";
+import picHabiTracker from "../images/app-habitracker.jpg";
+import picSoundersQuiz from "../images/app-sounders-quiz-gif-thumbnail.gif";
+import picReadMeGenerator from "../images/app-good-readme-generator.gif";
+import picComingSoon from "../images/app-comingsoon.jpg";
 
 const workSamples = [
   {
     id: 1,
     title: "HoliDAZE",
-    imagePath: {picHolidaze},
+    imagePath: picHolidaze,
     description:
-      "An international holiday finder which searches results by country and date or by search query.  Group project with Juanita Samborski, Ethan Buchanan, and Kasai Preston. Technologies used: HTML, CSS, JS, APIs",
-    page: "LIVE ON GITHUB",
+      "An international holiday finder which searches results by country and date or by search query.  Group project with Juanita Samborski, Ethan Buchanan, and Kasai Preston. Technologies used: HTML, CSS, JS, APIs,",
+    page: "LIVE",
     pageURL: "https://jsamborski310.github.io/Holidaze/",
     repo: "REPO",
     repoURL: "https://github.com/jsamborski310/Holidaze",
@@ -19,10 +25,10 @@ const workSamples = [
   {
     id: 2,
     title: "Game Notes",
-    imagePath: "../images/app-gamenotes.jpg",
+    imagePath: picGameNotes,
     description:
-      "A platform for collecting thoughts, observations, questions, etc. on recent soccer games (rather than a tech blog) allowing a head to could coordinate and collaborate with their coaching staff, medical personnel, data analysts, and players.Technologies used: HTML, Handlebars, CSS, JS, APIs, MVC, Sequelize, Express, Heroku",
-    page: "LIVE ON HEROKU",
+      "A platform for coaches, staff, medical personnel, data analysts, and players to collect thoughts, observations, questions, etc. on recent soccer games. Teams can coordinate and collaborate on Game Notes. Technologies used: HTML, Handlebars, CSS, JS, MVC, Sequelize, Express",
+    page: "LIVE",
     pageURL: "https://gamenotes-thenickedwards.herokuapp.com",
     repo: "REPO",
     repoURL: "https://github.com/thenickedwards/game-notes",
@@ -30,9 +36,10 @@ const workSamples = [
   {
     id: 3,
     title: "Happy Habit Tracker",
+    imagePath: picHabiTracker,
     description:
-      "An application to keep tabs on your physical, mental, and dietary health. Maintain your well-being by tracking good habits!",
-    page: "LIVE ON HEROKU",
+      "An application to keep tabs on your physical, mental, and dietary health. Maintain your well-being by tracking good habits! Technologies used: HTML, Handlebars, CSS, JS, Chart.js, APIs, MVC, Sequelize, Express, Heroku",
+    page: "LIVE",
     pageURL: "https://happy-habit-tracker-app.herokuapp.com",
     repo: "REPO",
     repoURL: "https://github.com/chandrapanda/happy-habit-tracker",
@@ -40,10 +47,10 @@ const workSamples = [
   {
     id: 4,
     title: "Sounders Quiz",
-    imagePath: {picHolidaze},
+    imagePath: picSoundersQuiz,
     description:
       "Demo of HTML created dynamically via JavaScript (so a player can’t use Dev Tools to peek at questions and answers ;). Local storage allows players to store their high scores to their browser. Technologies used: HTML, CSS, JS",
-    page: "LIVE ON GITHUB",
+    page: "LIVE",
     pageURL: "https://thenickedwards.github.io/sounders-quiz",
     repo: "REPO",
     repoURL: "https://github.com/thenickedwards/sounders-quiz",
@@ -51,10 +58,10 @@ const workSamples = [
   {
     id: 5,
     title: "good-readme-generator",
-    imagePath: {picHolidaze},
+    imagePath: picReadMeGenerator,
     description:
-      "A command-line application that accepts user input and generates a high-quality, professional README.md. Generated readme includes the title of project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. Available licenses include badge. GitHub username, email, and table of contents clickable. Technologies used: JS, Inquirer, fs/file system",
-    page: "DEMO VIDEO",
+      "A command-line application that accepts user input and generates a high-quality, professional README.md. From clickable table of contentns to license badges! Technologies used: JS, Inquirer, fs/file system",
+    page: "DEMO",
     pageURL:
       "https://drive.google.com/file/d/1jIMywy9jxhm8zK6Pv2GPztcIyaX4DLUx/view",
     repo: "REPO",
@@ -63,7 +70,7 @@ const workSamples = [
   {
     id: 6,
     title: "More coming soon!",
-    imagePath: {picHolidaze},
+    imagePath: picComingSoon,
     description: "I'm just getting started :D",
     page: "",
     pageURL: "",
@@ -74,34 +81,23 @@ const workSamples = [
 
 export default function Projects() {
   return (
-    <section>
-      <h1>hello world</h1>
-      <image src="../images/app-holidaze-plac.jpeg"></image>
-      {/*  */}
-      {workSamples.map((item) => (
-        <Card key={item.id} style={{ width: "18rem" }}>
-          {/* <Card.Img
-            variant="top"
-            src={require("../images/" + item.imagePath + ".jpeg")}
-          /> */}
-          <Card.Img
-            variant="top"
-            src={item.imagePath}
-          />
-          <Card.Img
-            variant="top"
-            src={"../images/" + item.imagePath + ".jpeg"}
-          />
-          <Card.Body>
-            <Card.Title>{item.title}</Card.Title>
-            <Card.Text>{item.description}</Card.Text>
-          </Card.Body>
-          <Card.Body>
-            <Card.Link href={item.pageURL}>{item.page}</Card.Link>
-            <Card.Link href={item.repoURL}>{item.repo}</Card.Link>
-          </Card.Body>
-        </Card>
-      ))}
+    <section className="samples-container">
+        {workSamples.map((item) => (
+            <Card key={item.id} 
+            // style={{ width: "18rem" }}
+            className="col-md-3 m-4 sample-card"
+            >
+              <Card.Img variant="top" src={item.imagePath} />
+              <Card.Body>
+                <Card.Title>{item.title}</Card.Title>
+                <Card.Text>{item.description}</Card.Text>
+              </Card.Body>
+              <Card.Body>
+                <Card.Link href={item.pageURL}>{item.page}</Card.Link>
+                <Card.Link href={item.repoURL}>{item.repo}</Card.Link>
+              </Card.Body>
+            </Card>
+        ))}
     </section>
   );
 }

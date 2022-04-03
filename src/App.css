@@ -27,6 +27,37 @@
   display: flex;
 }
 
+.about-container {
+  color: white;
+  margin: 50px ;
+  /* width: 70%; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+  column-gap: 20px;
+}
+
+/* .about-container p {
+  margin: 20px;
+} */
+
+@media all and (max-width: 500px) {
+  .about-container {
+    flex-direction: column-reverse;
+  }
+}
+
+.samples-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.sample-card {
+
+}
+
 .footer-container {
   width: 100%;
   display: flex;

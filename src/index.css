@@ -6,7 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* //////////////////// */
-  background: url(images/background_blur89.jpg);
+  /* background: url(images/background_blur89.jpg); */
+  background: url(images/background_blur89dk.jpg);
   background-repeat: no-repeat;
   background-size: auto;
 }

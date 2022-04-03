@@ -40,6 +40,7 @@ const workSamples = [
   {
     id: 4,
     title: "Sounders Quiz",
+    imagePath: {picHolidaze},
     description:
       "Demo of HTML created dynamically via JavaScript (so a player can’t use Dev Tools to peek at questions and answers ;). Local storage allows players to store their high scores to their browser. Technologies used: HTML, CSS, JS",
     page: "LIVE ON GITHUB",
@@ -50,6 +51,7 @@ const workSamples = [
   {
     id: 5,
     title: "good-readme-generator",
+    imagePath: {picHolidaze},
     description:
       "A command-line application that accepts user input and generates a high-quality, professional README.md. Generated readme includes the title of project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. Available licenses include badge. GitHub username, email, and table of contents clickable. Technologies used: JS, Inquirer, fs/file system",
     page: "DEMO VIDEO",
@@ -61,6 +63,7 @@ const workSamples = [
   {
     id: 6,
     title: "More coming soon!",
+    imagePath: {picHolidaze},
     description: "I'm just getting started :D",
     page: "",
     pageURL: "",
@@ -81,6 +84,14 @@ export default function Projects() {
             variant="top"
             src={require("../images/" + item.imagePath + ".jpeg")}
           /> */}
+          <Card.Img
+            variant="top"
+            src={item.imagePath}
+          />
+          <Card.Img
+            variant="top"
+            src={"../images/" + item.imagePath + ".jpeg"}
+          />
           <Card.Body>
             <Card.Title>{item.title}</Card.Title>
             <Card.Text>{item.description}</Card.Text>

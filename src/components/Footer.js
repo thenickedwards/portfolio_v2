@@ -1,4 +1,5 @@
 import React from 'react'
+
 import emailIconGray from '../images/icon-email-fast-gray.png'
 import githubIconGray from '../images/icon-github-gray.png'
 import linkedinIconGray from '../images/icon-linkedin-gray.png'

@@ -1,12 +1,15 @@
 import './App.css';
-import Footer from './components/Footer';
 import Nav from './components/Nav';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
   return (
     <>
       <Nav />
+      <Projects />
       <Footer />
     </>
   );

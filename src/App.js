@@ -5,19 +5,25 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { useState } from 'react';
 
 
 function App() {
+
+  const [ view, setView ] = useState("about")
+
+
+
+
   return (
     <>
-      <Nav />
-      <Bio />
-      <Projects />
-      <Contact />
+      <Nav view={view} setView={setView} />
+      { view === "about" && <Bio /> }
+      { view === "work" && <Projects /> }
+      { view === "contact" && <Contact /> }
       <Footer />
     </>
   );
 }
 
 export default App;
-// Check out icon avatars for footer

@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Card, CardGroup, Row, Col } from "react-bootstrap/";
-// import "bootstrap/dist/css/bootstrap.min.css";
 
 // Sample app images
 import picHolidaze from "../images/app-holidaze-plac.jpeg";
@@ -81,7 +80,7 @@ const workSamples = [
 
 export default function Projects() {
   return (
-    <section className="samples-container">
+    <section className="samples-container vw-100">
         {workSamples.map((item) => (
             <Card key={item.id} 
             // style={{ width: "18rem" }}
@@ -92,10 +91,10 @@ export default function Projects() {
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.description}</Card.Text>
               </Card.Body>
-              <Card.Body>
+              <Card.Footer>
                 <Card.Link href={item.pageURL}>{item.page}</Card.Link>
                 <Card.Link href={item.repoURL}>{item.repo}</Card.Link>
-              </Card.Body>
+              </Card.Footer>
             </Card>
         ))}
     </section>

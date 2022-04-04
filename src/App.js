@@ -5,15 +5,19 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { useState } from 'react';
-
+import { useEffect, useState } from 'react';
 
 function App() {
 
-  const [ view, setView ] = useState("about")
+  // Set view to about on page load
+  useEffect(() => {
+    setView('about');
+  }, []);
 
-
-
+  // Hash URL will load via direct link
+  const [ view, setView ] = useState(() => {
+    return document.location.hash.slice(1);
+  })
 
   return (
     <>

@@ -3,6 +3,8 @@ Nick Edwards - Full Stack Developer Portfolio
 
 All portfolio code written per acceptance criteria in [W20-hw_readme.md](/W20-hw_README.md). [React Bootstrap](https://react-bootstrap.github.io/) was used as a framework and [React Icons](https://github.com/react-icons/react-icons) were also used. All other materials (images, copy, etc.) provided by me!
 
+Please note: due to an issue with deployment the original repo was scrapped and a new one created. To see the history of commits and progression of coe/develop ment visit: https://github.com/thenickedwards/portfolio_v2. The published repo is at https://github.com/thenickedwards/portfolio and has few commits.
+
 ## Work Done
 * A single-page application portfolio for a web developer created from scratch.
 * When portfolio is loaded, theh visitor is presented with a page containing a header, a section for content, and a footer
@@ -19,9 +21,11 @@ All portfolio code written per acceptance criteria in [W20-hw_readme.md](/W20-hw
 * Whwne viewing the footer, a visitor is presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 
 ## Links
-URL for published page: 
+URL for published page: https://thenickedwards.github.io/portfolio/
 
 URL for GitHub repo: https://github.com/thenickedwards/portfolio
+
+URL for GitHUb repo used during development: https://github.com/thenickedwards/portfolio_v2
 
 Thank you for reading the readme!
 

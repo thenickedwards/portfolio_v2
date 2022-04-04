@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'react-bootstrap/Image'
 import nickPic from "../images/NEdwards-pic.png";
 
 export default function Bio() {

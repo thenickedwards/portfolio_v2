@@ -6,16 +6,16 @@ export default function Nav({ view, setView }) {
         <h1>Nick Edwards</h1>
         <div className='nav-menu'>
           <a href='#about' onClick={() => setView('about')}>
-            <h4>about</h4>
+            { view === "about" ? ( <h4 className='selected-view'>about</h4> ) : ( <h4>about</h4> ) }
           </a>
           <a href='#work' onClick={() => setView('work')}>
-            <h4>work</h4>
+            { view === "work" ? ( <h4 className='selected-view'>work</h4> ) : ( <h4>work</h4> ) }
           </a>
           <a href="https://drive.google.com/file/d/1MEYN1a2HQp9i5H9hOEgbEBIaHD7J32v4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <h4>resume</h4>
           </a>
           <a href='#contact' onClick={() => setView('contact')}>
-            <h4>contact</h4>
+            { view === "contact" ? ( <h4 className='selected-view'>contact</h4> ) : ( <h4>contact</h4> ) }
           </a>
         </div>
         

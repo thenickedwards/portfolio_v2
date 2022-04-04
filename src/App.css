@@ -34,9 +34,9 @@
   justify-content: right;
 }
 
-.nav-main h4:hover {
+/* .nav-main h4:hover {
   color: white;
-}
+} */
 
 .nav-main h4:active {
   color: white;
@@ -113,4 +113,8 @@
 
 .footer-container a:active {
   color: white;
+}
+
+.selected-view {
+  color: white !important;
 }

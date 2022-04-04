@@ -59,6 +59,20 @@
 
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact-container p {
+  color: white;
+}
+
+.contact-form {
+  background-color: slategray;
+}
+
 .footer-container {
   width: 100%;
   display: flex;

@@ -9,6 +9,8 @@ import picSoundersQuiz from "../images/app-sounders-quiz-gif-thumbnail.gif";
 import picReadMeGenerator from "../images/app-good-readme-generator.gif";
 import picComingSoon from "../images/app-comingsoon.jpg";
 
+// Icons for technologies
+
 const workSamples = [
   {
     id: 1,
@@ -16,6 +18,7 @@ const workSamples = [
     imagePath: picHolidaze,
     description:
       "An international holiday finder which searches results by country and date or by search query.  Group project with Juanita Samborski, Ethan Buchanan, and Kasai Preston. Technologies used: HTML, CSS, JS, APIs,",
+      // technologies: with imported icons!!!
     page: "LIVE",
     pageURL: "https://jsamborski310.github.io/Holidaze/",
     repo: "REPO",

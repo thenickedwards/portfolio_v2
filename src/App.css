@@ -91,9 +91,9 @@
 }
 
 .tech-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-evenly !important;
 }
 
 .contact-container {

@@ -90,6 +90,11 @@
   font-weight: bold;
 }
 
+.tech-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .contact-container {
   display: flex;
   justify-content: center;

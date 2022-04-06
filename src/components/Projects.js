@@ -101,7 +101,7 @@ export default function Projects() {
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.description}</Card.Text>
-                <Card.Text>{item.technologies}</Card.Text>
+                <Card.Text className="tech-icons">{item.technologies}</Card.Text>
               </Card.Body>
               <Card.Footer>
                 <Card.Link href={item.pageURL}>{item.page}</Card.Link>

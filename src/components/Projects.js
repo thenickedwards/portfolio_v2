@@ -101,9 +101,7 @@ export default function Projects() {
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.description}</Card.Text>
-                <div className="tech-icons">{item.technologies}
-                  {/* <Card.Text>{item.technologies}</Card.Text> */}
-                </div>
+                <Card.Text className="tech-icons">{item.technologies}</Card.Text>
               </Card.Body>
               <Card.Footer>
                 <Card.Link href={item.pageURL}>{item.page}</Card.Link>

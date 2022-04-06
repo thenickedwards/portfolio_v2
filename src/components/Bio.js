@@ -47,7 +47,7 @@ export default function Bio() {
 
           </div>
         </div>
-        <img src={nickPic} />
+        <img alt="Nick Edwards - Full Stack Dev" src={nickPic} />
     </section>
   )
 }

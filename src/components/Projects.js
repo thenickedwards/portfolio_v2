@@ -10,6 +10,9 @@ import picReadMeGenerator from "../images/app-good-readme-generator.gif";
 import picComingSoon from "../images/app-comingsoon.jpg";
 
 // Icons for technologies
+import { SiHtml5, SiCss3, SiJavascript, SiJquery, SiMysql, SiSequelize, SiGraphql, SiHandlebarsdotjs, SiMongodb, SiExpress, SiReact, SiNodedotjs, SiJest, SiInsomnia, SiHeroku, SiApollographql } from "react-icons/si"
+
+
 
 const workSamples = [
   {
@@ -18,7 +21,7 @@ const workSamples = [
     imagePath: picHolidaze,
     description:
       "An international holiday finder which searches results by country and date or by search query.  Group project with Juanita Samborski, Ethan Buchanan, and Kasai Preston. Technologies used: HTML, CSS, JS, APIs,",
-      // technologies: with imported icons!!!
+    technologies: [ <SiHtml5 />, <SiCss3 />, <SiJavascript />, <SiJquery />, <SiInsomnia /> ],
     page: "LIVE",
     pageURL: "https://jsamborski310.github.io/Holidaze/",
     repo: "REPO",
@@ -30,6 +33,7 @@ const workSamples = [
     imagePath: picGameNotes,
     description:
       "A platform for coaches, staff, medical personnel, data analysts, and players to collect thoughts, observations, questions, etc. on recent soccer games. Teams can coordinate and collaborate on Game Notes. Technologies used: HTML, Handlebars, CSS, JS, MVC, Sequelize, Express",
+    technologies: [ <SiHtml5 />, <SiHandlebarsdotjs />, <SiCss3 />, <SiJavascript />, <SiSequelize />, <SiInsomnia />, <SiExpress />, <SiNodedotjs /> ],
     page: "LIVE",
     pageURL: "https://gamenotes-thenickedwards.herokuapp.com",
     repo: "REPO",
@@ -41,6 +45,7 @@ const workSamples = [
     imagePath: picHabiTracker,
     description:
       "An application to keep tabs on your physical, mental, and dietary health. Maintain your well-being by tracking good habits! Technologies used: HTML, Handlebars, CSS, JS, Chart.js, APIs, MVC, Sequelize, Express, Heroku",
+    technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript />, <SiSequelize />, <SiInsomnia />, <SiExpress />, <SiNodedotjs />, <SiHeroku /> ],
     page: "LIVE",
     pageURL: "https://happy-habit-tracker-app.herokuapp.com",
     repo: "REPO",
@@ -52,6 +57,7 @@ const workSamples = [
     imagePath: picSoundersQuiz,
     description:
       "Demo of HTML created dynamically via JavaScript (so a player can’t use Dev Tools to peek at questions and answers ;). Local storage allows players to store their high scores to their browser. Technologies used: HTML, CSS, JS",
+    technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript /> ],
     page: "LIVE",
     pageURL: "https://thenickedwards.github.io/sounders-quiz",
     repo: "REPO",
@@ -63,6 +69,7 @@ const workSamples = [
     imagePath: picReadMeGenerator,
     description:
       "A command-line application that accepts user input and generates a high-quality, professional README.md. From clickable table of contentns to license badges! Technologies used: JS, Inquirer, fs/file system",
+    technologies: [<SiHtml5 />, <SiCss3 />, <SiJavascript /> ],
     page: "DEMO",
     pageURL:
       "https://drive.google.com/file/d/1jIMywy9jxhm8zK6Pv2GPztcIyaX4DLUx/view",
@@ -74,6 +81,7 @@ const workSamples = [
     title: "More coming soon!",
     imagePath: picComingSoon,
     description: "I'm just getting started :D",
+    technologies: "",
     page: "",
     pageURL: "",
     repo: "",
@@ -93,6 +101,7 @@ export default function Projects() {
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.description}</Card.Text>
+                <Card.Text>{item.technologies}</Card.Text>
               </Card.Body>
               <Card.Footer>
                 <Card.Link href={item.pageURL}>{item.page}</Card.Link>

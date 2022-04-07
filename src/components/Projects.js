@@ -92,9 +92,7 @@ const workSamples = [
 export default function Projects() {
   return (
     <section className="samples-container vw-100">
-      {/* <Container>
-        <Row>
-          <Col> */}
+
         {workSamples.map((item) => (
             <Card key={item.id} 
             // style={{ width: "18rem" }}
@@ -112,9 +110,7 @@ export default function Projects() {
               </Card.Footer>
             </Card>
             ))}
-            {/* </Col>
-          </Row>
-        </Container> */}
+
     </section>
   );
 }

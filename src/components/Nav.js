@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Nav({ view, setView }) {
   return (
-    <section className='nav-main vw-100'>
+    <section className='nav-main'>
         <h1>Nick Edwards</h1>
         <div className='nav-menu'>
           <a href='#about' onClick={() => setView('about')}>

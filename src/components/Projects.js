@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Card, CardGroup, Row, Col, Container } from "react-bootstrap/";
+import { Card } from "react-bootstrap/";
 
 // Sample app images
 import picHolidaze from "../images/app-holidaze-plac.jpeg";
@@ -91,25 +91,31 @@ const workSamples = [
 
 export default function Projects() {
   return (
-    <section className="samples-container vw-100">
+    <section className="container d-flex justify-content-center">
+    {/* <section className="samples-container vw-100"> */}
 
-        {workSamples.map((item) => (
-            <Card key={item.id} 
-            // style={{ width: "18rem" }}
-            className="row col-md-3 m-4 sample-card"
-            >
-              <Card.Img variant="top" src={item.imagePath} />
-              <Card.Body>
-                <Card.Title>{item.title}</Card.Title>
-                <Card.Text>{item.description}</Card.Text>
-                <Card.Text className="tech-icons">{item.technologies}</Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <Card.Link href={item.pageURL}>{item.page}</Card.Link>
-                <Card.Link href={item.repoURL}>{item.repo}</Card.Link>
-              </Card.Footer>
-            </Card>
-            ))}
+      <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+
+          {workSamples.map((item) => (
+              <Card key={item.id} 
+              // style={{ width: "18rem" }}
+              className="p-3"
+              // className="row col-md-3 m-4 sample-card"
+              >
+                <Card.Img variant="top" src={item.imagePath} />
+                <Card.Body>
+                  <Card.Title>{item.title}</Card.Title>
+                  <Card.Text>{item.description}</Card.Text>
+                  <Card.Text className="tech-icons">{item.technologies}</Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Card.Link href={item.pageURL}>{item.page}</Card.Link>
+                  <Card.Link href={item.repoURL}>{item.repo}</Card.Link>
+                </Card.Footer>
+              </Card>
+              ))}
+              
+      </div>
 
     </section>
   );

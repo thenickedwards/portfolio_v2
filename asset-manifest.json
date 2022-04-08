@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d6a29f7b.css",
+    "main.js": "/portfolio/static/js/main.1e1e072c.js",
+    "static/js/787.18ad6996.chunk.js": "/portfolio/static/js/787.18ad6996.chunk.js",
+    "static/media/app-good-readme-generator.gif": "/portfolio/static/media/app-good-readme-generator.8eff4b3692b5a395eb98.gif",
+    "static/media/background_blur89dk.jpg": "/portfolio/static/media/background_blur89dk.86ba836b33f82de43719.jpg",
+    "static/media/app-holidaze-plac.jpeg": "/portfolio/static/media/app-holidaze-plac.f906d0b544d956f619d2.jpeg",
+    "static/media/app-sounders-quiz-gif-thumbnail.gif": "/portfolio/static/media/app-sounders-quiz-gif-thumbnail.8cd8b4938081a06cfead.gif",
+    "static/media/app-comingsoon.jpg": "/portfolio/static/media/app-comingsoon.0e3730e40f5e9c24cee4.jpg",
+    "static/media/app-gamenotes.jpg": "/portfolio/static/media/app-gamenotes.0514aa0dc00afabff536.jpg",
+    "static/media/NEdwards-pic.png": "/portfolio/static/media/NEdwards-pic.163aa025111c2cd93835.png",
+    "static/media/app-habitracker.jpg": "/portfolio/static/media/app-habitracker.59517ec9d0627099899d.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.d6a29f7b.css.map": "/portfolio/static/css/main.d6a29f7b.css.map",
+    "main.1e1e072c.js.map": "/portfolio/static/js/main.1e1e072c.js.map",
+    "787.18ad6996.chunk.js.map": "/portfolio/static/js/787.18ad6996.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6a29f7b.css",
+    "static/js/main.1e1e072c.js"
+  ]
+}

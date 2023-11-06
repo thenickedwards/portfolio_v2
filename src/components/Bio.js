@@ -29,26 +29,26 @@ export default function Bio() {
           <h4 className='nav-main nav-menu'>toolkit</h4>
           <div className='tools-container col-10'>
             
-            <h1><SiHtml5 alt="HTML"/></h1>
-            <h1><SiCss3 alt="CSS"/></h1>
-            <h1><SiJavascript alt="JS/Javascript"/></h1>
+            <h1><SiHtml5 title="HTML" alt="HTML"/></h1>
+            <h1><SiCss3 title="CSS" alt="CSS"/></h1>
+            <h1><SiJavascript title="Javascript" alt="JS/Javascript"/></h1>
 
-            <h1><SiMongodb alt="MongoDB"/></h1>
-            <h1><SiExpress alt="Express"/></h1>
-            <h1><SiReact alt="React"/></h1>
-            <h1><SiNodedotjs alt="Node.js"/></h1>
+            <h1><SiMongodb title="MongoDB" alt="MongoDB"/></h1>
+            <h1><SiExpress title="Express" alt="Express"/></h1>
+            <h1><SiReact title="React" alt="React"/></h1>
+            <h1><SiNodedotjs title="Node.js" alt="Node.js"/></h1>
 
 
-            {/* <h1><SiJquery alt="jQuery"/></h1> */}
-            <h1><SiMysql alt="MySQL"/></h1>
-            <h1><SiSequelize alt="Sequelize"/></h1>
-            <h1><SiGraphql alt="GraphQL"/></h1>
-            {/* <h1><SiHandlebarsdotjs alt="Handlebars"/></h1> */}
+            {/* <h1><SiJquery title="jQuery" alt="jQuery"/></h1> */}
+            <h1><SiMysql title="MySQL" alt="MySQL"/></h1>
+            <h1><SiSequelize title="Sequelize" alt="Sequelize"/></h1>
+            <h1><SiGraphql title="GraphQL" alt="GraphQL"/></h1>
+            {/* <h1><SiHandlebarsdotjs title="Handlebars" alt="Handlebars"/></h1> */}
             
-            {/* <h1><SiJest alt="Jest"/></h1> */}
-            <h1><SiInsomnia alt="Insomnia"/></h1>
-            {/* <h1><SiHeroku alt="Heroku"/></h1> */}
-            <h1><SiApollographql alt="Apollo"/></h1>
+            {/* <h1><SiJest title="Jest" alt="Jest"/></h1> */}
+            <h1><SiInsomnia title="Insomnia" alt="Insomnia"/></h1>
+            {/* <h1><SiHeroku title="Heroku" alt="Heroku"/></h1> */}
+            <h1><SiApollographql title="Apollo" alt="Apollo"/></h1>
 
           </div>
         </div>
